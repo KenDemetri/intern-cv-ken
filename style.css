@@ -8,56 +8,78 @@ body {
   line-height: 1.6;
 }
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 header {
   background-color: #f1e500;
-  color: rgb(0, 0, 0);
   padding: 20px;
   text-align: center;
-  border-bottom: 5px solid #333;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #333;
+  color: white;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1;
+  list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   text-decoration: none;
+  background: #333;
   color: white;
-  background-color: #333;
-  padding: 8px 15px;
+  padding: 8px 14px;
   border-radius: 5px;
 }
 
-nav ul li a:hover {
-  background-color: #555;
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
 section {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background: #f9f9f9;
+  margin-bottom: 20px;
   padding: 20px;
-  margin-bottom: 30px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 footer {
   text-align: center;
-  padding: 20px;
   background: #eee;
-  margin-top: 20px;
+  padding: 15px;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark section {
+  background: #1e1e1e;
+}
+
+body.dark button,
+body.dark nav a {
+  background: white;
+  color: black;
 }
